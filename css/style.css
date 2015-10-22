@@ -1,10 +1,202 @@
 body {
+  min-width: 800px;
+  margin: 0;
+  padding: 0;
+
   color: black;
   font-family: PTSans, Arial, serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+  }
+
+/* START index page*/
+.main-header {
+  padding: 5px 0;
+  }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  }
+
+.main-navigation {
+  float: left;
+  width: 800px;
+  }
+
+.user-block {
+  float: right;
+  width: 160px;
+  }
+
+.main-container {
+  margin: 30px auto;
+  }
+
+.logo {
+  width: 368px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  }
+
+.featured-row {
+  margin-bottom: 35px;
+  }
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  }
+
+.features-item:last-child {
+  margin-right: 0;
+  }
+
+.index-content {
+  margin-bottom: 20px;
+  padding: 35px 40px;
+  }
+
+.index-content:last-child {
+
+  }
+
+.content-column-left,
+.content-column-right {
+  width: 400px;
+  }
+
+.content-column-left {
+  float: left;
+  }
+
+.content-column-right {
+  float: right;
+  }
+
+.main-footer {
+  padding: 20px 0;
+  }
+
+.footer-contacts {
+  float: left;
+  width: 390px;
+  margin-right: 20px;
+  }
+
+.footer-social {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+  }
+
+.footer-copyright {
+  float: right;
+  width: 390px;
+  }
+
+/* END index page*/
+
+/* START catalog page*/
+.container-header {
+
+  }
+
+.breadcrumbs-navigation {
+
+  }
+
+.filters {
+  float: left;
+  width: 240px;
+  }
+
+.filter-manufactures {
+
+  }
+
+.filter-group-products {
+
+  }
+
+.catalog {
+  float: right;
+  width: 720px;
+  }
+
+.catalog-item {
+  float: left;
+  width: 240px;
+  }
+
+.catalog-item:nth-child(3n+4) {
+  clear: both;
+  }
+
+.container-footer {
+
+  }
+
+.pages {
+
+  }
+
+/* END catalog page*/
+
+/* START catalog-item page*/
+.product-images {
+  float: left;
+  width: 480px;
+  }
+
+.product-thumbs {
+
+  }
+
+.thumb {
+  float: left;
+  width: 160px;
+
+  }
+
+.product-content {
+  float: right;
+  width: 480px;
+  }
+
+.product-warehouse {
+
+  }
+
+.product-stock {
+  float: left;
+  }
+
+.product-marking {
+  float: right;
+  }
+
+.product-description {
+  clear: both;
+  }
+
+.product-price-box {
+
+  }
+
+.product-package-content {
+
+  }
+
+/* END catalog-item page*/
 
 h1 {
   color: black;
