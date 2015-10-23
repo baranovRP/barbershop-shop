@@ -1,5 +1,7 @@
 body {
-  min-width: 800px;
+  min-width: 800px; /*[DL] Использовать body, как общую обёртку, не совсем удобно. Лучше использовать 
+  див с одним из классов, например: wrapper, container, page-wrapper, page-container. 
+  Общай обёртка часто бывает полезна для стилей, которые не хочется назначать на body.*/
   margin: 0;
   padding: 0;
 
@@ -7,7 +9,7 @@ body {
   font-family: PTSans, Arial, serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 24px; /*[DL] Размеры шрифтов, жирность, межстрочный интервал я бы рекомендовал задавать конкретно нужному тэг, а лучше классу.*/
   }
 
 .clearfix:after {
@@ -22,7 +24,7 @@ body {
   }
 
 .container {
-  width: 960px;
+  width: 960px; /*[DL] Вот как раз у тебя общая обёртка*/
   margin: 0 auto;
   }
 
@@ -137,7 +139,7 @@ body {
   width: 240px;
   }
 
-.catalog-item:nth-child(3n+4) {
+.catalog-item:nth-child(3n+4) { /*[DL] Зачем такой сложный селектор?*/
   clear: both;
   }
 
@@ -197,6 +199,8 @@ body {
   }
 
 /* END catalog-item page*/
+
+/*[DL] Стили, которые ты описываешь глобально, лучше всего, писать в самом начале*/
 
 h1 {
   color: black;
