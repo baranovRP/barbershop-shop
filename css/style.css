@@ -130,6 +130,11 @@ h2 {
   width: 240px;
   }
 
+.control {
+  float: left;
+  width: 200px;
+  }
+
 .filter-manufactures {
 
   }
@@ -149,7 +154,6 @@ h2 {
   }
 
 .catalog-item:nth-child(3n+4) {
-  /*[DL] Зачем такой сложный селектор?*/
   clear: both;
   }
 
