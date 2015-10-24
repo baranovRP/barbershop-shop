@@ -1,3 +1,24 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
 body {
   margin: 0;
   padding: 0;
@@ -21,10 +42,19 @@ h2 {
   line-height: 18px;
   }
 
+/*.clearfix:after {*/
+  /*content: '';*/
+  /*display: table;*/
+  /*clear: both;*/
+  /*}*/
+
+.clearfix:before,
 .clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
+  content:"";
+  display:table;
+  }
+.clearfix:after {
+  clear:both;
   }
 
 /* START index page*/
@@ -33,20 +63,26 @@ h2 {
   }
 
 .container {
-  width: 960px;
-  /*Я бы ещё по бокам задал паддинги по 10px слева и справа (ширина уменьшится на этиже значения)*/
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
+
+  outline: red dashed;
   }
 
 .main-navigation {
   float: left;
-  width: 800px;
-  /*У тебя nav блочный элемент, его ширина, будет равна ширине родителя*/
+  width: 790px;
+
+  outline: red dashed;
   }
 
 .user-block {
   float: right;
-  width: 160px;
+  width: 150px;
+
+  outline: red dashed;
   }
 
 .main-container {
@@ -82,17 +118,15 @@ h2 {
 
   }
 
-.content-column-left,
-.content-column-right {
-  width: 400px; /*если значения ширину у этих блоков действительно 400px, можно их объединить в один класс, а влево и вправо задать определённым селекторам
-  например: col-left, col-right.*/
+.content-column {
+  width: 400px;
   }
 
-.content-column-left {
+.to-left {
   float: left;
   }
 
-.content-column-right {
+.to-right {
   float: right;
   }
 
@@ -102,7 +136,7 @@ h2 {
 
 .footer-contacts {
   float: left;
-  width: 390px;
+  width: 380px;
   margin-right: 20px;
   }
 
@@ -114,7 +148,7 @@ h2 {
 
 .footer-copyright {
   float: right;
-  width: 390px;
+  width: 380px;
   }
 
 /* END index page*/
@@ -148,16 +182,24 @@ h2 {
 
 .catalog {
   float: right;
-  width: 720px;
+  width: 700px;
+  font-size: 0;
   }
 
 .catalog-item {
-  float: left;
-  width: 240px;
-  }
+  display: inline-block;
+  width: 220px;
+  padding-left: 5px;
+  padding-right: 5px;
 
-.catalog-item:nth-child(3n+4) { /*Для чего ты используешь такой селектор? Если для очистки потока, используй clearfix*/
-  clear: both;
+  color: black;
+  font-family: PTSans, Arial, serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  vertical-align: top;
+
+  outline: red dashed;
   }
 
 .container-footer {
@@ -172,8 +214,7 @@ h2 {
 
 /* START catalog-item page*/
 .product-images {
-  float: left;
-  width: 480px;
+  width: 460px;
   }
 
 .product-thumbs {
@@ -182,13 +223,14 @@ h2 {
 
 .thumb {
   float: left;
-  width: 160px;
+  width: 150px;
 
   }
 
 .product-content {
-  float: right;
-  width: 480px;
+  width: 460px;
+  min-height: 50px;
+  margin-bottom: 10px;
   }
 
 .product-warehouse {
@@ -203,8 +245,8 @@ h2 {
   float: right;
   }
 
-.product-description { /*Для чего ты используешь такой селектор? Если для очистки потока, используй clearfix*/
-  clear: both;
+.product-description {
+
   }
 
 .product-price-box {
