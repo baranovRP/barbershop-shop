@@ -42,19 +42,14 @@ h2 {
   line-height: 18px;
   }
 
-/*.clearfix:after {*/
-  /*content: '';*/
-  /*display: table;*/
-  /*clear: both;*/
-  /*}*/
-
 .clearfix:before,
 .clearfix:after {
-  content:"";
-  display:table;
+  content: "";
+  display: table;
   }
+
 .clearfix:after {
-  clear:both;
+  clear: both;
   }
 
 /* START index page*/
@@ -67,22 +62,34 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-
-  outline: red dashed;
   }
 
 .main-navigation {
   float: left;
   width: 790px;
+  }
 
-  outline: red dashed;
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+.main-navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
   }
 
 .user-block {
   float: right;
   width: 150px;
-
-  outline: red dashed;
   }
 
 .main-container {
@@ -112,10 +119,6 @@ h2 {
 .index-content {
   margin-bottom: 20px;
   padding: 35px 40px;
-  }
-
-.index-content:last-child {
-
   }
 
 .content-column {
@@ -158,8 +161,27 @@ h2 {
 
   }
 
-.breadcrumbs-navigation {
+.breadcrumbs-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
 
+.breadcrumbs-navigation li {
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+.breadcrumbs-navigation a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
+.breadcrumbs-navigation .active a {
+  color: #aba9a7;
   }
 
 .filters {
@@ -168,7 +190,7 @@ h2 {
   }
 
 .control {
-  float: left;
+  display: block;
   width: 200px;
   }
 
@@ -198,8 +220,6 @@ h2 {
   font-weight: 700;
   line-height: 18px;
   vertical-align: top;
-
-  outline: red dashed;
   }
 
 .container-footer {
@@ -208,6 +228,24 @@ h2 {
 
 .pages {
 
+  }
+
+.pages ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.pages li {
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+.page {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
   }
 
 /* END catalog page*/
@@ -230,11 +268,12 @@ h2 {
 .product-content {
   width: 460px;
   min-height: 50px;
+  margin-top: 10px;
   margin-bottom: 10px;
   }
 
 .product-warehouse {
-
+  margin-bottom: 20px;
   }
 
 .product-stock {
@@ -246,15 +285,15 @@ h2 {
   }
 
 .product-description {
-
+  margin-bottom: 20px;
   }
 
 .product-price-box {
-
+  margin-bottom: 20px;
   }
 
 .product-package-content {
-
+  margin-bottom: 20px;
   }
 
 /* END catalog-item page*/
