@@ -34,12 +34,14 @@ h2 {
 
 .container {
   width: 960px;
+  /*Я бы ещё по бокам задал паддинги по 10px слева и справа (ширина уменьшится на этиже значения)*/
   margin: 0 auto;
   }
 
 .main-navigation {
   float: left;
   width: 800px;
+  /*У тебя nav блочный элемент, его ширина, будет равна ширине родителя*/
   }
 
 .user-block {
@@ -82,7 +84,8 @@ h2 {
 
 .content-column-left,
 .content-column-right {
-  width: 400px;
+  width: 400px; /*если значения ширину у этих блоков действительно 400px, можно их объединить в один класс, а влево и вправо задать определённым селекторам
+  например: col-left, col-right.*/
   }
 
 .content-column-left {
@@ -153,7 +156,7 @@ h2 {
   width: 240px;
   }
 
-.catalog-item:nth-child(3n+4) {
+.catalog-item:nth-child(3n+4) { /*Для чего ты используешь такой селектор? Если для очистки потока, используй clearfix*/
   clear: both;
   }
 
@@ -200,7 +203,7 @@ h2 {
   float: right;
   }
 
-.product-description {
+.product-description { /*Для чего ты используешь такой селектор? Если для очистки потока, используй clearfix*/
   clear: both;
   }
 
