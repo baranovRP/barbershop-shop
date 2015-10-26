@@ -19,6 +19,9 @@ time, mark, audio, video {
   vertical-align: baseline;
   }
 
+/*Такое обнуление стилей чересчур. Обнуляй только те стили у тэгов, которые ты используешь.
+font-size: 100%, font: inherit и vertical-align:baseline, border:0 — глобально всем задавать не стоит.*/
+
 body {
   margin: 0;
   padding: 0;
