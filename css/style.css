@@ -30,10 +30,11 @@ section {
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+/*[DL] Писал тебе о том, что не стоит так сбрасывать свойства у всех этих элементов глобально*/
 
+body {
+  margin: 0; /*[DL] Где-то уже эти стили были*/
+  padding: 0;
   font-family: PTSans, Arial, serif;
   color: black;
 }
@@ -151,8 +152,7 @@ h2 {
 }
 
 .to-left {
-  float: left;
-}
+  float: left; /*[DL] Хелперы тоже стоит писать в самом начале. Можно законментировать*/
 
 .to-right {
   float: right;
@@ -244,8 +244,6 @@ h2 {
   padding-bottom: 20px;
 }
 
-
-
 .product-title {
   padding-bottom: 20px;
 }
@@ -258,8 +256,8 @@ h2 {
 }
 
 .pages ul {
-  margin: 0;
-  padding: 0;
+  margin: 0; /*[DL] Где-то уже эти стили были*/
+  padding: 0; /*[DL] Где-то уже эти стили были*/
 
   list-style: none;
 }
