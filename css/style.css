@@ -438,6 +438,31 @@ body {
 /* END index page*/
 
 /* START catalog page*/
+.main-header.catalog-page {
+  margin-bottom: 0;
+
+  background: #000000;
+}
+
+.container-header {
+  padding-top: 60px;
+  padding-bottom: 35px;
+
+  color: #000000;
+
+  background: #f8f5f2 url("../img/bg-pattern-content.png");
+}
+
+.container-header h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 129px;
+
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+}
+
 .breadcrumbs-navigation ul {
   margin: 0;
   padding: 0;
@@ -460,6 +485,14 @@ body {
 
 .breadcrumbs-navigation .active a {
   color: #aba9a7;
+}
+
+.main-container {
+  margin-bottom: 35px;
+
+  color: #000000;
+
+  background: #f8f5f2 url("../img/bg-pattern-content.png");
 }
 
 .filters {
@@ -513,8 +546,8 @@ body {
 }
 
 .pages ul {
-  margin: 0; /*[DL] Где-то уже эти стили были*/
-  padding: 0; /*[DL] Где-то уже эти стили были*/
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -530,6 +563,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.main-footer.catalog-page{
+  margin-top: 0;
+  }
 /* END catalog page*/
 
 /* START catalog-item page*/
